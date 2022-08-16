@@ -223,6 +223,7 @@ radioAppTwo.addEventListener("click", approveTwoCol);
 radioAppThree.addEventListener("click", approveThreeCol);
 
 const appAll = function () {
+  document.querySelectorAll("select").value = 0;
   approveOneCol();
   approveTwoCol();
   approveThreeCol();
@@ -261,9 +262,9 @@ const rejAll = function () {
   selectTwo.value = msgSelect.value;
   rejectThreeCol();
   selectThree.value = msgSelect.value;
-  hideRejAll();
   msgSelect.value = 0;
   document.querySelector("textarea").value = "";
+  hideRejAll();
 };
 
 btnAppAll.addEventListener("click", appAll);
@@ -342,3 +343,49 @@ if (radioAppThree.checked) {
     updateEntriesThree();
   });
 }
+
+// /////// to be revised
+// var mousePosition;
+// var offset = [0, 0];
+// var div = msg;
+// var isDown = false;
+
+// div = document.createElement("div");
+// div.style.position = "absolute";
+// div.style.left = "0px";
+// div.style.top = "0px";
+
+// document.body.appendChild(div);
+
+// div.addEventListener(
+//   "mousedown",
+//   function (e) {
+//     isDown = true;
+//     offset = [div.offsetLeft - e.clientX, div.offsetTop - e.clientY];
+//   },
+//   true
+// );
+
+// document.addEventListener(
+//   "mouseup",
+//   function () {
+//     isDown = false;
+//   },
+//   true
+// );
+
+// document.addEventListener(
+//   "mousemove",
+//   function (event) {
+//     event.preventDefault();
+//     if (isDown) {
+//       mousePosition = {
+//         x: event.clientX,
+//         y: event.clientY,
+//       };
+//       div.style.left = mousePosition.x + offset[0] + "px";
+//       div.style.top = mousePosition.y + offset[1] + "px";
+//     }
+//   },
+//   true
+// );
