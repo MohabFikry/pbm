@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="lay hidden"></div>
+    <!-- <img class="image" src="img.png" alt="logo" /> -->
+    <div class="whole">
+      <div class="decesion-all">
+        <div class="approve-all">Approve all</div>
+        <div class="reject-all">Reject all</div>
+      </div>
+
+      <div class="main main1">
+        <div class="container contain">
+          <div class="header head">
+            <h4>
+              LIPANTHYL 145 - <span class="tab">30</span>'s (10's Blister x 3)
+            </h4>
+          </div>
+          <div class="decesion">
+            <input type="radio" name="decesion1" id="a" checked />
+            <label for="a">Approve</label>
+            <input type="radio" name="decesion1" id="r" />
+            <label for="r">Reject</label>
+          </div>
+          <div class="claimed cla">
+            <span class="g gt">&gt;</span>
+            <span>claimed : [</span>
+            <input type="number" value="30" class="c--1" disabled />
+            <span>units ]</span>
+            <input type="number" value="1" class="c--2" disabled />
+            <span>pack(s) For</span>
+            <input type="number" value="30" class="c--3" disabled />
+            <span>day</span>
+          </div>
+          <div class="approved app">
+            <span class="g gt">&gt;</span>
+            <span>approved : [</span>
+            <input type="number" class="a--1" value="" />
+            <span>units ]</span>
+            <input type="number" class="a--2" disabled />
+            <span>pack(s) For</span>
+            <input type="number" class="a--3" value="" />
+            <span>day</span>
+          </div>
+          <hr />
+          <div class="footer">
+            <div>
+              <span class="f">Price :</span>
+              <span class="vp">45.00</span>
+            </div>
+            <div>
+              <span class="f">Co-pay :</span>
+              <span class="vc">15.00</span>
+              <span class="vc"> %</span>
+            </div>
+            <div>
+              <span class="f">Approved :</span>
+              <span class="v--1">0</span>
+            </div>
+            <div>
+              <span class="f">Payer share :</span>
+              <span class="v--2">0</span>
+            </div>
+            <div>
+              <span class="f">Patient share :</span>
+              <span class="v--3">0</span>
+            </div>
+          </div>
+          <!-- select-list -->
+          <select class="select-list sl">
+            <option value="0">-Select Reason-</option>
+            <option value="47">
+              AUTH-001:Prior approval is required and was not obtained
+            </option>
+            <option value="52">
+              AUTH-006:Alert drug - drug interaction or drug is contra-indicated
+            </option>
+            <option value="53">AUTH-007:Drug duplicate therapy</option>
+            <option value="54">AUTH-008:Inappropriate drug dose</option>
+            <option value="56">
+              AUTH-010:Authorization request overlaps or is within the period of
+              another paid claim or approved authorization
+            </option>
+            <option value="57">
+              AUTH-011:Waiting period on pre-existing / specific conditions
+            </option>
+            <option value="250">AUTH-012:Request for Information</option>
+            <option value="67">
+              BENX-005:Annual limit/sublimit amount exceeded
+            </option>
+            <option value="78">
+              CLAI-012:Submission not compliant with contractual agreement
+              between provider & payer
+            </option>
+            <option value="83">
+              CLAI-017:Services not available on direct billing
+            </option>
+            <option value="102">
+              CODE-010:Activity/diagnosis inconsistent with clinician specialty
+            </option>
+            <option value="104">
+              CODE-012:Encounter type inconsistent with service(s) / diagnosis
+            </option>
+            <option value="105">CODE-013:Invalid principal diagnosis</option>
+            <option value="106">
+              CODE-014:Activity/diagnosis is inconsistent with the patient's
+              age/gender
+            </option>
+            <option value="125">
+              DUPL-001:Claim is a duplicate based on service codes and dates
+            </option>
+            <option value="132">
+              ELIG-005:Services performed after the last date of coverage
+            </option>
+            <option value="133">
+              ELIG-006:Services performed prior to the effective date of
+              coverage
+            </option>
+            <option value="145">
+              MNEC-003:Service is not clinically indicated based on good
+              clinical practice
+            </option>
+            <option value="155">
+              NCOV-001:Diagnosis(es) is (are) not covered
+            </option>
+            <option value="156">
+              NCOV-002:Pre-existing conditions are not covered
+            </option>
+            <option value="158">
+              NCOV-003:Service(s) is (are) not covered
+            </option>
+            <option value="227">SURC-001:Sever drug - drug interaction</option>
+            <option value="228">
+              SURC-002:Sever drug - age contraindication
+            </option>
+            <option value="236">
+              TIME-002:Requested additional information was not received or was
+              not received within time limit
+            </option>
+            <option value="243">
+              WRNG-001:Wrong submission, receiver is not responsible for the
+              payer within this transaction submission.
+            </option>
+          </select>
+          <!-- end select  -->
+        </div>
+      </div>
+
+      <div class="main main2">
+        <div class="container contain">
+          <div class="header head">
+            <h4>
+              CRESTOR 10mg - <span class="tab">28</span>'s Calendar Pack (14's
+              Blister x 2)
+            </h4>
+          </div>
+          <div class="decesion">
+            <input type="radio" name="decesion2" id="a" checked />
+            <label for="a">Approve</label>
+            <input type="radio" name="decesion2" id="r" />
+            <label for="r">Reject</label>
+          </div>
+          <div class="claimed cla">
+            <span class="g gt">&gt;</span>
+            <span>claimed : [</span>
+            <input type="number" value="28" class="c--1" disabled />
+            <span>units ]</span>
+            <input type="number" value="1" class="c--2" disabled />
+            <span>pack(s) For</span>
+            <input type="number" value="28" class="c--3" disabled />
+            <span>day</span>
+          </div>
+          <div class="approved app">
+            <span class="g gt">&gt;</span>
+            <span>approved : [</span>
+            <input type="number" class="a--1" value="" />
+            <span>units ]</span>
+            <input type="number" class="a--2" value="" disabled />
+            <span>pack(s) For</span>
+            <input type="number" class="a--3" value="" />
+            <span>day</span>
+          </div>
+          <hr />
+          <div class="footer">
+            <div>
+              <span class="f">Price :</span>
+              <span class="vp">120.50</span>
+            </div>
+            <div>
+              <span class="f">Co-pay :</span>
+              <span class="vc">15.00</span>
+              <span class="vc"> %</span>
+            </div>
+            <div>
+              <span class="f">Approved :</span>
+              <span class="v--1">0</span>
+            </div>
+            <div>
+              <span class="f">Payer share :</span>
+              <span class="v--2">0</span>
+            </div>
+            <div>
+              <span class="f">Patient share :</span>
+              <span class="v--3">0</span>
+            </div>
+          </div>
+          <!-- select-list -->
+          <select class="select-list sl">
+            <option value="0">-Select Reason-</option>
+            <option value="47">
+              AUTH-001:Prior approval is required and was not obtained
+            </option>
+            <option value="52">
+              AUTH-006:Alert drug - drug interaction or drug is contra-indicated
+            </option>
+            <option value="53">AUTH-007:Drug duplicate therapy</option>
+            <option value="54">AUTH-008:Inappropriate drug dose</option>
+            <option value="56">
+              AUTH-010:Authorization request overlaps or is within the period of
+              another paid claim or approved authorization
+            </option>
+            <option value="57">
+              AUTH-011:Waiting period on pre-existing / specific conditions
+            </option>
+            <option value="250">AUTH-012:Request for Information</option>
+            <option value="67">
+              BENX-005:Annual limit/sublimit amount exceeded
+            </option>
+            <option value="78">
+              CLAI-012:Submission not compliant with contractual agreement
+              between provider & payer
+            </option>
+            <option value="83">
+              CLAI-017:Services not available on direct billing
+            </option>
+            <option value="102">
+              CODE-010:Activity/diagnosis inconsistent with clinician specialty
+            </option>
+            <option value="104">
+              CODE-012:Encounter type inconsistent with service(s) / diagnosis
+            </option>
+            <option value="105">CODE-013:Invalid principal diagnosis</option>
+            <option value="106">
+              CODE-014:Activity/diagnosis is inconsistent with the patient's
+              age/gender
+            </option>
+            <option value="125">
+              DUPL-001:Claim is a duplicate based on service codes and dates
+            </option>
+            <option value="132">
+              ELIG-005:Services performed after the last date of coverage
+            </option>
+            <option value="133">
+              ELIG-006:Services performed prior to the effective date of
+              coverage
+            </option>
+            <option value="145">
+              MNEC-003:Service is not clinically indicated based on good
+              clinical practice
+            </option>
+            <option value="155">
+              NCOV-001:Diagnosis(es) is (are) not covered
+            </option>
+            <option value="156">
+              NCOV-002:Pre-existing conditions are not covered
+            </option>
+            <option value="158">
+              NCOV-003:Service(s) is (are) not covered
+            </option>
+            <option value="227">SURC-001:Sever drug - drug interaction</option>
+            <option value="228">
+              SURC-002:Sever drug - age contraindication
+            </option>
+            <option value="236">
+              TIME-002:Requested additional information was not received or was
+              not received within time limit
+            </option>
+            <option value="243">
+              WRNG-001:Wrong submission, receiver is not responsible for the
+              payer within this transaction submission.
+            </option>
+          </select>
+          <!-- end select  -->
+        </div>
+      </div>
+
+      <div class="main main3">
+        <div class="container contain">
+          <div class="header head">
+            <h4>
+              EXFORGE 10mg/160mg - <span class="tab">28</span>'s (14's Blister x
+              2)
+            </h4>
+          </div>
+          <div class="decesion">
+            <input type="radio" name="decesion3" id="a" checked />
+            <label for="a">Approve</label>
+            <input type="radio" name="decesion3" id="r" />
+            <label for="r">Reject</label>
+          </div>
+          <div class="claimed cla">
+            <span class="g gt">&gt;</span>
+            <span>claimed : [</span>
+            <input type="number" value="28" class="c--1" disabled />
+            <span>units ]</span>
+            <input type="number" value="1" class="c--2" disabled />
+            <span>pack(s) For</span>
+            <input type="number" value="28" class="c--3" disabled />
+            <span>day</span>
+          </div>
+          <div class="approved app">
+            <span class="g gt">&gt;</span>
+            <span>approved : [</span>
+            <input type="number" class="a--1" value="" />
+            <span>units ]</span>
+            <input type="number" class="a--2" disabled />
+            <span>pack(s) For</span>
+            <input type="number" class="a--3" value="" />
+            <span>day</span>
+          </div>
+          <hr />
+          <div class="footer">
+            <div>
+              <span class="f">Price :</span>
+              <span class="vp">214.00</span>
+            </div>
+            <div>
+              <span class="f">Co-pay :</span>
+              <span class="vc">15.00</span>
+              <span class="vc"> %</span>
+            </div>
+            <div>
+              <span class="f">Approved :</span>
+              <span class="v--1">0</span>
+            </div>
+            <div>
+              <span class="f">Payer share :</span>
+              <span class="v--2">0</span>
+            </div>
+            <div>
+              <span class="f">Patient share :</span>
+              <span class="v--3">0</span>
+            </div>
+          </div>
+          <!-- select-list -->
+          <select class="select-list sl">
+            <option value="0">-Select Reason-</option>
+            <option value="47">
+              AUTH-001:Prior approval is required and was not obtained
+            </option>
+            <option value="52">
+              AUTH-006:Alert drug - drug interaction or drug is contra-indicated
+            </option>
+            <option value="53">AUTH-007:Drug duplicate therapy</option>
+            <option value="54">AUTH-008:Inappropriate drug dose</option>
+            <option value="56">
+              AUTH-010:Authorization request overlaps or is within the period of
+              another paid claim or approved authorization
+            </option>
+            <option value="57">
+              AUTH-011:Waiting period on pre-existing / specific conditions
+            </option>
+            <option value="250">AUTH-012:Request for Information</option>
+            <option value="67">
+              BENX-005:Annual limit/sublimit amount exceeded
+            </option>
+            <option value="78">
+              CLAI-012:Submission not compliant with contractual agreement
+              between provider & payer
+            </option>
+            <option value="83">
+              CLAI-017:Services not available on direct billing
+            </option>
+            <option value="102">
+              CODE-010:Activity/diagnosis inconsistent with clinician specialty
+            </option>
+            <option value="104">
+              CODE-012:Encounter type inconsistent with service(s) / diagnosis
+            </option>
+            <option value="105">CODE-013:Invalid principal diagnosis</option>
+            <option value="106">
+              CODE-014:Activity/diagnosis is inconsistent with the patient's
+              age/gender
+            </option>
+            <option value="125">
+              DUPL-001:Claim is a duplicate based on service codes and dates
+            </option>
+            <option value="132">
+              ELIG-005:Services performed after the last date of coverage
+            </option>
+            <option value="133">
+              ELIG-006:Services performed prior to the effective date of
+              coverage
+            </option>
+            <option value="145">
+              MNEC-003:Service is not clinically indicated based on good
+              clinical practice
+            </option>
+            <option value="155">
+              NCOV-001:Diagnosis(es) is (are) not covered
+            </option>
+            <option value="156">
+              NCOV-002:Pre-existing conditions are not covered
+            </option>
+            <option value="158">
+              NCOV-003:Service(s) is (are) not covered
+            </option>
+            <option value="227">SURC-001:Sever drug - drug interaction</option>
+            <option value="228">
+              SURC-002:Sever drug - age contraindication
+            </option>
+            <option value="236">
+              TIME-002:Requested additional information was not received or was
+              not received within time limit
+            </option>
+            <option value="243">
+              WRNG-001:Wrong submission, receiver is not responsible for the
+              payer within this transaction submission.
+            </option>
+          </select>
+          <!-- end select  -->
+        </div>
+      </div>
+
+      <div class="msg hidden">
+        <div class="msg-line">
+          <h6>Reject all drugs</h6>
+          <span>X</span>
+        </div>
+        <div>
+          <!-- select-list -->
+          <select class="msg-select">
+            <option value="0">-Select Reason-</option>
+            <option value="47">
+              AUTH-001:Prior approval is required and was not obtained
+            </option>
+            <option value="52">
+              AUTH-006:Alert drug - drug interaction or drug is contra-indicated
+            </option>
+            <option value="53">AUTH-007:Drug duplicate therapy</option>
+            <option value="54">AUTH-008:Inappropriate drug dose</option>
+            <option value="56">
+              AUTH-010:Authorization request overlaps or is within the period of
+              another paid claim or approved authorization
+            </option>
+            <option value="57">
+              AUTH-011:Waiting period on pre-existing / specific conditions
+            </option>
+            <option value="250">AUTH-012:Request for Information</option>
+            <option value="67">
+              BENX-005:Annual limit/sublimit amount exceeded
+            </option>
+            <option value="78">
+              CLAI-012:Submission not compliant with contractual agreement
+              between provider & payer
+            </option>
+            <option value="83">
+              CLAI-017:Services not available on direct billing
+            </option>
+            <option value="102">
+              CODE-010:Activity/diagnosis inconsistent with clinician specialty
+            </option>
+            <option value="104">
+              CODE-012:Encounter type inconsistent with service(s) / diagnosis
+            </option>
+            <option value="105">CODE-013:Invalid principal diagnosis</option>
+            <option value="106">
+              CODE-014:Activity/diagnosis is inconsistent with the patient's
+              age/gender
+            </option>
+            <option value="125">
+              DUPL-001:Claim is a duplicate based on service codes and dates
+            </option>
+            <option value="132">
+              ELIG-005:Services performed after the last date of coverage
+            </option>
+            <option value="133">
+              ELIG-006:Services performed prior to the effective date of
+              coverage
+            </option>
+            <option value="145">
+              MNEC-003:Service is not clinically indicated based on good
+              clinical practice
+            </option>
+            <option value="155">
+              NCOV-001:Diagnosis(es) is (are) not covered
+            </option>
+            <option value="156">
+              NCOV-002:Pre-existing conditions are not covered
+            </option>
+            <option value="158">
+              NCOV-003:Service(s) is (are) not covered
+            </option>
+            <option value="227">SURC-001:Sever drug - drug interaction</option>
+            <option value="228">
+              SURC-002:Sever drug - age contraindication
+            </option>
+            <option value="236">
+              TIME-002:Requested additional information was not received or was
+              not received within time limit
+            </option>
+            <option value="243">
+              WRNG-001:Wrong submission, receiver is not responsible for the
+              payer within this transaction submission.
+            </option>
+          </select>
+          <!-- end select  -->
+        </div>
+        <div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter your rejection comment"
+          ></textarea>
+        </div>
+        <div class="btns">
+          <div class="save">Save</div>
+          <div class="cancel">Cancel</div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
