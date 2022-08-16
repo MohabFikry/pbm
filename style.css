@@ -207,7 +207,8 @@ hr {
 }
 
 input[type="number"] {
-  width: 45px;
+  min-width: 45px;
+  max-width: 60px;
   border: none;
   text-align: center;
   height: 25px;
