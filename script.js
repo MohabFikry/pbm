@@ -262,6 +262,8 @@ const rejAll = function () {
   rejectThreeCol();
   selectThree.value = msgSelect.value;
   hideRejAll();
+  msgSelect.value = 0;
+  document.querySelector("textarea").value = "";
 };
 
 btnAppAll.addEventListener("click", appAll);
@@ -285,6 +287,13 @@ let updateEntriesOne = function () {
 
 if (radioAppOne.checked) {
   approvedInputOne.addEventListener("input", function () {
+    approvedInputOne.value = approvedInputOne.value;
+    updateEntriesOne();
+  });
+}
+if (radioAppOne.checked) {
+  approvedInputOne.addEventListener("focusout", function () {
+    approvedInputOne.value = approvedInputOne.value;
     updateEntriesOne();
   });
 }
@@ -305,6 +314,11 @@ if (radioAppTwo.checked) {
     updateEntriesTwo();
   });
 }
+if (radioAppTwo.checked) {
+  approvedInputTwo.addEventListener("focusout", function () {
+    updateEntriesTwo();
+  });
+}
 let updateEntriesThree = function () {
   const newPrice =
     Math.round(qtyThree.value * priceThree.textContent * 100) / 100;
@@ -320,6 +334,11 @@ let updateEntriesThree = function () {
 
 if (radioAppThree.checked) {
   approvedInputThree.addEventListener("input", function () {
+    updateEntriesThree();
+  });
+}
+if (radioAppThree.checked) {
+  approvedInputThree.addEventListener("focusout", function () {
     updateEntriesThree();
   });
 }
