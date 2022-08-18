@@ -42,13 +42,13 @@ const tabOne = document.querySelector(".main1 .header .tab");
 const tabTwo = document.querySelector(".main2 .header .tab");
 const tabThree = document.querySelector(".main3 .header .tab");
 
-const radioAppOne = document.querySelector(".main1 .decesion #a");
-const radioAppTwo = document.querySelector(".main2 .decesion #a");
-const radioAppThree = document.querySelector(".main3 .decesion #a");
+const radioAppOne = document.querySelector(".main1 .decesion #a1");
+const radioAppTwo = document.querySelector(".main2 .decesion #a2");
+const radioAppThree = document.querySelector(".main3 .decesion #a3");
 
-const radioRejOne = document.querySelector(".main1 .decesion #r");
-const radioRejTwo = document.querySelector(".main2 .decesion #r");
-const radioRejThree = document.querySelector(".main3 .decesion #r");
+const radioRejOne = document.querySelector(".main1 .decesion #r1");
+const radioRejTwo = document.querySelector(".main2 .decesion #r2");
+const radioRejThree = document.querySelector(".main3 .decesion #r3");
 
 const btnAppAll = document.querySelector(".approve-all");
 const btnRejAll = document.querySelector(".reject-all");
@@ -256,6 +256,7 @@ const hideRejAll = function () {
 };
 
 const rejAll = function () {
+  appAll();
   rejectOneCol();
   selectOne.value = msgSelect.value;
   rejectTwoCol();
