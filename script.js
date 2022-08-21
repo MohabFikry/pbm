@@ -128,8 +128,7 @@ const approveOneCol = function () {
   durationInputOne.value = durationOne.value;
   qtyOne.value = approvedInputOne.value / tabOne.textContent;
   priceOne.textContent = qtyOne.value * priceOne.textContent;
-  approvedOne.textContent =
-    priceOne.textContent ;
+  approvedOne.textContent = priceOne.textContent;
   ptOne.textContent = priceOne.textContent * (coOne.textContent / 100);
   payerOne.textContent =
     Math.round((approvedOne.textContent - ptOne.textContent) * 100) / 100;
@@ -158,8 +157,7 @@ const approveTwoCol = function () {
   durationInputTwo.value = durationTwo.value;
   qtyTwo.value = approvedInputTwo.value / tabTwo.textContent;
   priceTwo.textContent = qtyTwo.value * priceTwo.textContent;
-  approvedTwo.textContent =
-    priceTwo.textContent;
+  approvedTwo.textContent = priceTwo.textContent;
   ptTwo.textContent = priceTwo.textContent * (coTwo.textContent / 100);
   payerTwo.textContent =
     Math.round((approvedTwo.textContent - ptTwo.textContent) * 100) / 100;
@@ -187,8 +185,7 @@ const approveThreeCol = function () {
   durationInputThree.value = durationThree.value;
   qtyThree.value = approvedInputThree.value / tabThree.textContent;
   priceThree.textContent = qtyThree.value * priceThree.textContent;
-  approvedThree.textContent =
-    priceThree.textContent;
+  approvedThree.textContent = priceThree.textContent;
   ptThree.textContent = priceThree.textContent * (coThree.textContent / 100);
   payerThree.textContent =
     Math.round((approvedThree.textContent - ptThree.textContent) * 100) / 100;
