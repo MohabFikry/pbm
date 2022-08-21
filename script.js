@@ -276,8 +276,7 @@ let updateEntriesOne = function () {
   const newPrice = Math.round(qtyOne.value * priceOne.textContent * 100) / 100;
   qtyOne.value =
     Math.round((approvedInputOne.value / tabOne.textContent) * 100) / 100;
-  approvedOne.textContent =
-    Math.round(newPrice * (1 - coOne.textContent / 100) * 100) / 100;
+  approvedOne.textContent = Math.round(newPrice * 100) / 100;
   ptOne.textContent =
     Math.round(newPrice * (coOne.textContent / 100) * 100) / 100;
   payerOne.textContent =
@@ -300,8 +299,7 @@ let updateEntriesTwo = function () {
   const newPrice = Math.round(qtyTwo.value * priceTwo.textContent * 100) / 100;
   qtyTwo.value =
     Math.round((approvedInputTwo.value / tabTwo.textContent) * 100) / 100;
-  approvedTwo.textContent =
-    Math.round(newPrice * (1 - coTwo.textContent / 100) * 100) / 100;
+  approvedTwo.textContent = Math.round(newPrice * 100) / 100;
   ptTwo.textContent =
     Math.round(newPrice * (coTwo.textContent / 100) * 100) / 100;
   payerTwo.textContent =
@@ -323,8 +321,7 @@ let updateEntriesThree = function () {
     Math.round(qtyThree.value * priceThree.textContent * 100) / 100;
   qtyThree.value =
     Math.round((approvedInputThree.value / tabThree.textContent) * 100) / 100;
-  approvedThree.textContent =
-    Math.round(newPrice * (1 - coThree.textContent / 100) * 100) / 100;
+  approvedThree.textContent = Math.round(newPrice * 100) / 100;
   ptThree.textContent =
     Math.round(newPrice * (coThree.textContent / 100) * 100) / 100;
   payerThree.textContent =
